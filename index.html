@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- **[v8.3, #538]** A private app on a public URL: never indexed. Pages
+         cannot send an X-Robots-Tag header, so the page says it itself; it pairs
+         with public/robots.txt (spec v8 §5.1). -->
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- **[v7.8.75] Two theme colours, not one.** This was a hard `#ffffff`, so
+         the browser painted a white bar above an app sitting in dark. A `media`
+         attribute is the only way to say both, and it works where it matters —
+         the address bar and the status bar. **The manifest's own `theme_color`
+         and `background_color` stay single-valued**, because the splash screen
+         is drawn before anything can ask what theme you are in; that one is a
+         real limit rather than an oversight. -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1e1e1c" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
+    <!-- **[v7.8.75]** Was pointed at the 192, while a correctly-sized 180 sat in
+         the folder referenced by nothing at all. iOS wants 180. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <!-- Safari's pinned tab takes a silhouette and tints it itself, so it gets
+         the one-colour copy with no disc — see icons/icon-mono.svg. -->
+    <link rel="mask-icon" href="/icons/icon-mono.svg" color="#2b2926" />
+    <title>Personal Compass</title>
+    <script>
+      // Applies the theme before first paint so there's no flash of the
+      // wrong theme while React is still mounting — src/hooks/useThemePref.ts
+      // takes over from here once the app is up.
+      (function () {
+        try {
+          var pref = localStorage.getItem('personal-compass:theme')
+          var dark =
+            pref === 'dark' ||
+            (pref !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light')
+        } catch (e) {}
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/index-3BbY7UsB.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BnwnM2Qh.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

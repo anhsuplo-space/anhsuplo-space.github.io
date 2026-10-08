@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 42 940 940">
+  <!-- Personal Compass, one colour. For Safari's pinned tab and anywhere else
+       that takes a silhouette and tints it itself.
+
+       **The viewBox matches `favicon.svg`'s** — read the derivation there
+       (#526). Two `any` surfaces framing the same drawing differently would be
+       #385's shape: two faces disagreeing about one fact.
+
+       **The white disc is deliberately absent.** A mask-icon is filled with a
+       single colour whatever the file says, so a disc would fill solid and
+       swallow the star. What is left is the outline the star reads from — and
+       the ring's own taper survives, because it is a shape rather than a stroke. -->
+  <g fill="#000000">
+    <path d="M408.75,491.72c0,17.79,.89,35.48,2.68,53.02-43.51-11.86-84.48-29.79-121.99-52.84,37.49-23.07,78.47-41.03,121.95-52.9-1.76,17.44-2.65,35.03-2.65,52.72Z"/>
+    <path d="M659.61,544.67c1.76-17.44,2.65-35.03,2.65-52.72s-.89-35.48-2.68-53.02c43.51,11.86,84.48,29.79,121.99,52.84-37.49,23.07-78.47,41.03-121.95,52.9Z"/>
+    <path d="M900.05,484.71c-7.76-88.52-46.16-173.97-107.35-238.23,154.87,163.58,117.42,431.81-80.11,543.91-95.88,55.29-216.8,60.79-317.19,15.72-164.34-71.82-247.19-263.42-188.91-432.99C289.85,127.17,601.22,55.18,785.29,238.88c-65.03-65.51-153.77-106.72-245.83-114.83-161.83-16.24-325.6,75.06-395.43,223.23-73.49,148.56-40.47,338.41,78.4,454.45,116.1,118.74,305.88,151.58,454.35,78.14,148.08-69.78,239.4-233.39,223.27-395.16Zm-107.35-238.23c-1.37-1.45-2.76-2.9-4.17-4.33,1.41,1.43,2.78,2.88,4.17,4.33Z"/>
+    <circle cx="787.03" cy="240.17" r="64"/>
+    <path d="M538.08,178c-66.49,84.85-106.11,191.76-106.11,307.91s39.7,223.25,106.29,308.14c66.49-84.85,106.11-191.76,106.11-307.91s-39.7-223.25-106.29-308.14Zm.09,360.69c-29.08,0-52.66-23.58-52.66-52.66s23.58-52.66,52.66-52.66,52.66,23.58,52.66,52.66-23.58,52.66-52.66,52.66Z"/>
+  </g>
+</svg>
