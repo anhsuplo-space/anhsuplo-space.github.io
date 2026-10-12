@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 42 940 940">
+  <!-- Personal Compass. Drawn by the owner (design/ai/icon-01.svg); this is that
+       file with the Illustrator artefacts removed and two colours named so the
+       tab icon follows the browser's theme.
+
+       The disc is a real shape, not a background: it is what makes the star
+       readable when the icon sits on a dark strip. It follows the ground rather
+       than staying white, or a dark theme would show a white plate.
+
+       **[v7.9.75, #526] The viewBox is TRIMMED PAPER, not a redrawn icon.**
+       The paths are the owner's, untouched, on their original 1024 artboard;
+       what moved is the frame around them. At `0 0 1024 1024` the furthest ink
+       sat at 88.1% of the half-edge, so the drawing spanned 77.9% of the tile —
+       and in a taskbar that cost twice over, because this icon carries a white
+       plate AND a margin inside the plate while a full-bleed neighbour's tile is
+       the icon. A 940 square centred on (512, 512) puts the furthest ink at
+       **96%** and the drawing at **85%** of the tile.
+
+       This is the division #514 set when it scaled the maskable to 0.911: the
+       fix belongs to GENERATION, not to drawing — which is why the taper, the
+       disc and the dot's overshoot all survive exactly as drawn.
+
+       **To re-derive after a redraw**, never nudge: measure the furthest ink
+       from (512, 512) in the artboard's own units, then `size = radius / 0.48`
+       and centre the box on it. 96 rather than 100 is antialiasing headroom. -->
+  <style>
+    .disc { fill: #ffffff }
+    .ink  { fill: #2b2926 }
+    @media (prefers-color-scheme: dark) {
+      .disc { fill: #1e1e1c }
+      .ink  { fill: #ecebe5 }
+    }
+  </style>
+  <path class="disc" d="M712.59,790.39c-95.88,55.29-216.8,60.79-317.19,15.72-164.34-71.82-247.19-263.42-188.91-432.99C289.85,127.17,601.22,55.18,785.29,238.88c1.09,1.08,2.17,2.17,3.24,3.27,159.69,163.14,123.34,435.15-75.94,548.24Z"/>
+  <g class="ink">
+    <path d="M408.75,491.72c0,17.79,.89,35.48,2.68,53.02-43.51-11.86-84.48-29.79-121.99-52.84,37.49-23.07,78.47-41.03,121.95-52.9-1.76,17.44-2.65,35.03-2.65,52.72Z"/>
+    <path d="M659.61,544.67c1.76-17.44,2.65-35.03,2.65-52.72s-.89-35.48-2.68-53.02c43.51,11.86,84.48,29.79,121.99,52.84-37.49,23.07-78.47,41.03-121.95,52.9Z"/>
+    <path d="M900.05,484.71c-7.76-88.52-46.16-173.97-107.35-238.23,154.87,163.58,117.42,431.81-80.11,543.91-95.88,55.29-216.8,60.79-317.19,15.72-164.34-71.82-247.19-263.42-188.91-432.99C289.85,127.17,601.22,55.18,785.29,238.88c-65.03-65.51-153.77-106.72-245.83-114.83-161.83-16.24-325.6,75.06-395.43,223.23-73.49,148.56-40.47,338.41,78.4,454.45,116.1,118.74,305.88,151.58,454.35,78.14,148.08-69.78,239.4-233.39,223.27-395.16Zm-107.35-238.23c-1.37-1.45-2.76-2.9-4.17-4.33,1.41,1.43,2.78,2.88,4.17,4.33Z"/>
+    <circle cx="787.03" cy="240.17" r="64"/>
+    <path d="M538.08,178c-66.49,84.85-106.11,191.76-106.11,307.91s39.7,223.25,106.29,308.14c66.49-84.85,106.11-191.76,106.11-307.91s-39.7-223.25-106.29-308.14Zm.09,360.69c-29.08,0-52.66-23.58-52.66-52.66s23.58-52.66,52.66-52.66,52.66,23.58,52.66,52.66-23.58,52.66-52.66,52.66Z"/>
+  </g>
+</svg>
